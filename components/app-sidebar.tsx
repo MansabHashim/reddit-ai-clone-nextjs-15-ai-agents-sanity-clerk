@@ -95,18 +95,18 @@ export async function AppSidebar({
                 </Link>
               </SidebarMenuButton>
 
-              <SidebarMenuButton asChild className="p-5">
+              {/* <SidebarMenuButton asChild className="p-5">
                 <Link href="/popular">
                   <TrendingUpIcon className="w-4 h-4 mr-2" />
                   Popular
                 </Link>
-              </SidebarMenuButton>
-              <SidebarMenuButton asChild className="p-5">
+              </SidebarMenuButton> */}
+              {/* <SidebarMenuButton asChild className="p-5">
                 <Link href="/hot">
                   <FlameIcon className="w-4 h-4 mr-2" />
                   Hot/Controversial
                 </Link>
-              </SidebarMenuButton>
+              </SidebarMenuButton> */}
             </SidebarMenuItem>
           </SidebarMenu>
         </SidebarGroup>
@@ -116,7 +116,7 @@ export async function AppSidebar({
             {sidebarData.navMain.map((item, index) => (
               <Collapsible
                 key={item.title}
-                defaultOpen={index === 1}
+                defaultOpen={true}
                 className="group/collapsible"
               >
                 <SidebarMenuItem>
