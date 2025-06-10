@@ -2,20 +2,6 @@
 
 A modern, AI-powered Reddit clone built with Next.js 15, Sanity CMS, Clerk, and AI content moderation. Features real-time content updates, community management, and AI-assisted content filtering.
 
-## Things to do before you start
-
-#### Support the Project
-
-When you sign up for services using our affiliate links, you help support the continued development of project's like these at no extra cost to you:
-
-- Sign up to **Clerk** here: https://go.clerk.com/if5bz07
-
-- Sign up to **Sanity:** here: https://www.sanity.io/sonny?utm_source=youtube&utm_medium=video&utm_content=reddit
-
-These partnerships allow us to maintain this project while keeping it free and open source.
-Thank you for your support!
-
-## Features
 
 ### For Users
 
@@ -137,12 +123,6 @@ pnpm dev
 - Radix UI
 - Lucide Icons
 
-## Join the World's Best Developer Course & Community Zero to Full Stack Hero! 🚀
-
-### Want to Master Modern Web Development?
-
-This project was built as part of the [Zero to Full Stack Hero](https://www.papareact.com/course) course. Join thousands of developers and learn how to build projects like this and much more!
-
 #### What You'll Learn:
 
 - 📚 Comprehensive Full Stack Development Training
@@ -161,7 +141,6 @@ This project was built as part of the [Zero to Full Stack Hero](https://www.papa
 - 👥 Peer Learning & Networking
 - 📈 Personal Growth Tracking
 
-[Join Zero to Full Stack Hero Today!](https://www.papareact.com/course)
 
 ## License
 

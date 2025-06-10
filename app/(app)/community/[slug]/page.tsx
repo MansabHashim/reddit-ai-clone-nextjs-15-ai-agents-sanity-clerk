@@ -52,7 +52,8 @@ async function CommunityPage({
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex flex-col gap-4">
             {posts.length > 0 ? (
-              posts.map((post) => (
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              posts.map((post: any) => (
                 <Post key={post._id} post={post} userId={user?.id || null} />
               ))
             ) : (

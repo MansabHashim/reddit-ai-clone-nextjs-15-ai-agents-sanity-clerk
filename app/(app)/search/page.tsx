@@ -2,6 +2,7 @@ import { searchSubreddits } from "@/sanity/lib/subreddit/searchSubreddits";
 import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 
 async function SearchPage({
   searchParams,
@@ -33,7 +34,7 @@ async function SearchPage({
       <section className="my-8">
         <div className="mx-auto max-w-7xl px-4">
           <ul className="flex flex-col gap-4">
-            {subreddits.map((subreddit) => (
+            {subreddits.map((subreddit: { _id: string; slug: string; image: SanityImageSource; title: string; description: string }) => (
               <li
                 key={subreddit._id}
                 className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden"

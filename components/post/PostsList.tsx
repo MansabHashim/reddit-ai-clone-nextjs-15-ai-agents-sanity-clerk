@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getPosts } from "@/sanity/lib/post/getPosts";
 import { currentUser } from "@clerk/nextjs/server";
 import Post from "./Post";
@@ -8,7 +9,7 @@ async function PostsList() {
 
   return (
     <div className="space-y-4">
-      {posts.map((post) => (
+      {posts.map((post: any) => (
         <Post key={post._id} post={post} userId={user?.id || null} />
       ))}
     </div>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from "react";
 import { FlameIcon, HomeIcon, Minus, Plus, TrendingUpIcon } from "lucide-react";
 
@@ -25,6 +26,7 @@ import ReddishLogo from "@/images/Reddish Full.png";
 import Link from "next/link";
 import { getSubreddits } from "@/sanity/lib/subreddit/getSubreddits";
 import CreateCommunityButton from "./header/CreateCommunityButton";
+import { Subreddit } from "@/sanity.types";
 
 type SidebarData = {
   navMain: {
@@ -51,7 +53,7 @@ export async function AppSidebar({
         title: "Communities",
         url: "#",
         items:
-          subreddits?.map((subreddit) => ({
+          subreddits?.map((subreddit: Subreddit) => ({
             title: subreddit.title || "unknown",
             url: `/community/${subreddit.slug}`,
             isActive: false,
